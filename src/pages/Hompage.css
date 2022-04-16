@@ -1,12 +1,3 @@
-.main-slide {
-  width: 90;
-  height: 90vh;
-  z-index: 1;
-}
-img {
-  width: 90;
-  height: 90vh;
-}
 .carousel .thumb {
   position: absolute;
   right: 0px;
@@ -14,12 +5,49 @@ img {
   border: 3px solid #73ad21;
   padding: 10px;
 }
-/* .carousel .axis {
-  visibility: hidden;
-} */
-.main-slide h1 {
-  text-align: rtl;
+
+.somfey {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+.imageone {
+  height: 100%;
+  z-index: -1;
+  display: grid;
+  place-items: center;
+}
+
+.header {
+  font-size: 4em;
+  position: fixed;
+  text-align: left;
+  margin-right: 40%;
+  width: 50%;
+  color: white;
+}
+
+.imgaes2 {
+  background: rgba(58, 26, 26, 1);
+  width: 25vw;
+  height: 35vh;
+  text-align: center;
+  margin: 0 auto;
+}
+.imgaes2 img {
+  opacity: 1;
+  width: 25vw;
+  height: 35vh;
+  display: block;
+}
+.imgaes2 img:hover {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+.imgaes2 p {
+  color: white;
   z-index: 2;
-  top: 100%;
-  color: red;
+  position: fixed;
 }

@@ -1,9 +1,11 @@
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
+
 import "./Hompage.css";
 
-import log1 from "../../src/assets/apple.png";
-import log2 from "../../src/assets/appleteam.webp";
-import log3 from "../../src/assets/ipadair.png";
+import log1 from "../../src/assets/gate1.jpg";
+import log2 from "../../src/assets/gate2.jpg";
+import log3 from "../../src/assets/gate3.jpg";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import React, { Component } from "react";
@@ -22,20 +24,71 @@ const HomePage = () => {
         showThumbs={false}
       >
         <div>
-          <h1>HOLA</h1>
+          <div className="imageone">
+            <h1 className="header">
+              שעריים חשמליים ממונעים
+              <NavLink
+                className="nav-link"
+                aria-current="page"
+                to="/cardspanel"
+                activeClassName="activeLink"
+              >
+                לפרטים נוספים
+              </NavLink>
+            </h1>
+            <img src={log1} width="90vw" height="880vh" />
 
-          <img src={log1} width="90vw" height="90vh" labels={<h1>HOLA</h1>} />
-          <p className="legend">Legend 1</p>
+            <p className="legend">Legend 1</p>
+          </div>
         </div>
-        <div>
-          <img src={log2} width="90vw" height="90vh" />
+        <div className="imageone">
+          <h1 className="header">
+            שעריים חשמליים ממונעים
+            <NavLink
+              className="nav-link"
+              aria-current="page"
+              to="/cardspanel"
+              activeClassName="activeLink"
+            >
+              לפרטים נוספים
+            </NavLink>
+          </h1>
+          <img src={log2} width="90vw" height="880vh" />
+
           <p className="legend">Legend 2</p>
         </div>
-        <div>
-          <img src={log3} width="90vw" height="90vh" />
+        <div className="imageone">
+          <h1 className="header">
+            שעריים חשמליים ממונעים
+            <NavLink
+              className="nav-link"
+              aria-current="page"
+              to="/cardspanel"
+              activeClassName="activeLink"
+            >
+              לפרטים נוספים
+            </NavLink>
+          </h1>
+
+          <img src={log3} width="90vw" height="880vh" />
           <p className="legend">Legend 3</p>
         </div>
       </Carousel>
+      <div className="somfey">
+        <h1>פתרונות לבית חכם מבית Somfy, השותפים שלכם בבית</h1>
+      </div>
+      <div className="images">
+        <div className="imagesfirstrow">
+          <div className="imgaes2">
+            <img src={log3}></img>
+          </div>
+          <img src={log3} />
+          <img src={log3} />
+        </div>
+        <img src={log3} />
+        <img src={log3} />
+        <img src={log3} />
+      </div>
     </Fragment>
   );
 };
